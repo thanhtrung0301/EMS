@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="assets/grid.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <title>EMS</title>
 </head>
 <body>
@@ -440,28 +443,65 @@
         
     </div>
 
-    <div class="slide_show">
-        <div class="grid">
-            <div class="row">
-                <div class="col l-12 m-12 c-12">
-                    <div class="slide_show-img">
-                        <img src="images/1.jpg" alt="">
-                    </div>
-                    <div class="gallery">
-                        <img src="images/1.jpg" alt="">
-                        <img src="images/2.jpg" alt="">
-                        <img src="images/3.jpg" alt="">
-                        <img src="images/4.jpg" alt="">
-                        <img src="images/5.jpg" alt="">
-                        <img src="images/6.jpg" alt="">
-                        <img src="images/7.jpg" alt="">
-                        <img src="images/8.jpg" alt="">
-                    </div>
-                </div>
+    <div class="carousel-container">
+		<div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" checked="true">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio7">
+            <input type="radio" name="radio-btn" id="radio8">
+
+            <div class="slide first">
+                <img src="images/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/7.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/8.jpg" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
             </div>
         </div>
-       
-    </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+        </div>
+	</div>
 
     
     <div class="search">
@@ -552,7 +592,75 @@
         <button class="service-btn">Các dịch vụ khác</button>           
     </div>
         
-    <div class="intro"></div>
+    <div class="news">
+        <h1>Tin tức nổi bật</h1>
+        <div class="slider-news owl-carousel">
+            <div class="card-news">
+               <div class="img-news">
+                  <img src="./images/News/3.jpg" alt="">
+               </div>
+               <div class="content-news">
+                  <div class="title-news">
+                     Dịch vụ chuyển phát nhanh EMS - Tra cứu cước phí thật dễ dàng
+                  </div>
+                  <p>Chuyển phát nhanh EMS mất bao lâu? Chuyển phát nhanh khi nào nhận được?... chính là những câu hỏi thường xuyên gặp ở các khách hàng sử dụng dịch vụ chuyển phát.</p>
+                  <div class="footer-news">
+                    <div class="date-news">
+                        <i class="far fa-calendar"></i>
+                        <p>03/05/2022</p>
+                    </div>
+                    <div class="btn-news">
+                        <button>Xem thêm</button>
+                    </div>
+                  </div>    
+               </div>
+            </div>
+            <div class="card-news">
+               <div class="img-news">
+                  <img src="./images/News/2.jpg" alt="">
+               </div>
+               <div class="content-news">
+                  <div class="title-news">
+                    Thế nào là dịch vụ chuyển phát nhanh EMS?
+                  </div>
+                  <p>EMS là gì? Chuyển phát nhanh EMS mất bao lâu? Chuyển phát nhanh khi nào nhận được?... luôn là những câu hỏi được nhiều khách hàng thắc mắc. Đặt trong bối cảnh nhu cầu vận chuyển, sử dụng dịch vụ chuyển phát nhanh ở Việt Nam ngày một tăng nhanh, chắc chắn việc hiểu rõ về EMS sẽ giúp ích rất nhiều cho mọi người.</p>
+                  <div class="footer-news">
+                    <div class="date-news">
+                        <i class="far fa-calendar"></i>
+                        <p>03/05/2022</p>
+                    </div>
+                    <div class="btn-news">
+                        <button>Xem thêm</button>
+                    </div>
+                  </div>    
+               </div>
+            </div>
+            <div class="card-news">
+               <div class="img-news">
+                  <img src="./images/News/1.jpg" alt="">
+               </div>
+               <div class="content-news">
+                  <div class="title-news">
+                    Giải đáp: Chuyển phát nhanh khi nào nhận được?
+                  </div>
+                  <p>Để giải đáp thắc mắc của khách hàng dành về việc dịch vụ chuyển phát nhanh khi nào nhận được, Tổng Công ty Chuyển phát nhanh Bưu điện – CTCP (EMS Việt Nam) đã cung cấp nền tảng tra cứu cước vận chuyển thông minh qua website ems.com.vn.</p>
+                  <div class="footer-news">
+                    <div class="date-news">
+                        <i class="far fa-calendar"></i>
+                        <p>03/05/2022</p>
+                    </div>
+                    <div class="btn-news">
+                        <button>Xem thêm</button>
+                    </div>
+                  </div>    
+               </div>
+            </div>
+           
+            
+         </div>
+         <button class="service-btn">Xem toàn bộ</button>
+    </div>
+
     <div class="partner"></div>
     <div class="footer">
         <div class="grid wide">
@@ -638,6 +746,21 @@
         </div>
     </div>
 
+    <div class="contact-btn">
+        <i class="fas fa-phone-alt"></i>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
+
+<script>
+        $('.slider-news').owlCarousel({
+            margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3500,
+            autoplayHover: true,
+        })
+   
+</script>

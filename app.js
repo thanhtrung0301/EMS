@@ -45,27 +45,14 @@ navbar_icon.onclick = () => {
 }
 
 
-let gallery = document.querySelectorAll('.gallery img');
-let slideShowImg = document.querySelector('.slide_show-img img');
-let index = 0;
-
-function showImage() {
-    slideShowImg.src = gallery[index].src;
-}
-
-setInterval(() => {
-    setTimeout(() => {
-        slideShowImg.classList.toggle('fadeOut');
-     }, 2000);
-
-    index++;
-    if(index === gallery.length)
-        index = 0;
-    showImage();
-}, 4600);
-
-
-setInterval(() => {
-    slideShowImg.classList.toggle('fadeOut');   
-}, 2000);
+// Slideshow auto
+let count = 2;
+setInterval(function() {
+    console.log(count)
+    document.getElementById('radio' + count).checked = true;
+    count++;
+    
+    if(count > 8)
+        count = 1;
+}, 10000)
 
